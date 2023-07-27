@@ -27,44 +27,50 @@
 </head>
 <body class="font-lato">
   <!-- nav starts -->
-    <header class="container mx-auto px-5">
-      <div class="navbar bg-white rounded-full lg:py-8 lg:px-12 mt-12 lg:bg-[#F85559] lg:text-white">
+    <header class="container mx-auto px-2.5 my-5">
+      <div class="navbar lg:bg-[#F85559] rounded-[600px] text-black lg:text-white lg:p-3 relative z-50">
         <div class="navbar-start">
-          <div class="dropdown">
-            <ul tabindex="0" class="hidden lg:flex gap-7">
+          <ul class="menu menu-horizontal px-1 hidden lg:flex font-medium">
               <li><a>Home</a></li>
               <li><a>About Us</a></li>
               <li><a>Shop</a></li>
               <li><a>All Fruits</a></li>
             </ul>
-            <label tabindex="0" class="lg:hidden btn btn-ghost btn-circle">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
-            </label>
-            <ul tabindex="0" class="lg:hidden menu menu-sm dropdown-content mt-3 p-2 z-[1] shadow bg-base-100 w-28 rounded-box text black">
-              <li><a>Home</a></li>
-              <li><a>About Us</a></li>
-              <li><a>Shop</a></li>
-              <li><a>All Fruits</a></li>
-            </ul>
-          </div>
-        </div>
+            <img class="lg:hidden" src="images/logo.png" alt="">
+            <a class="btn btn-ghost normal-case text-xl lg:hidden">Fruit Burst</a>
+            </div>
 
-        <div class="navbar-center">
-          <img src="./images/logo.png" alt="">
-          <a class="btn btn-ghost normal-case text-4xl">Fruit Burst</a>
-        </div>
-        <div class="hidden md:flex navbar-end">
-          <div class="form-control relative">
-            <input type="text" placeholder="Search here" class="input input-bordered md:w-auto lg:w-96 rounded-full">
-          <button class="absolute btn btn-ghost btn-circle right-2">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="gray"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
-          </button>
-        </div>
-      </div>
-      </div>
+            <div class="navbar-center hidden lg:flex">
+              <img src="images/logo.png" alt="">
+              <a class="btn btn-ghost normal-case text-xl">Fruit Burst</a>
+              </div>
+
+              <div class="navbar-end">
+                <div class="form-control">
+                  <input type="text" placeholder="Search here" class="input input-bordered border-0 w-24 md:w-auto rounded-[60px] hidden lg:block">
+                </div>
+                <div class="dropdown dropdown-left">
+                  <label tabindex="0" class="btn btn-ghost lg:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                  </label>
+                  <ul tabindex="0" class="menu menu-sm dropdown-content mt-3  shadow bg-base-100 bg-opacity-10 rounded-box w-40 font-medium">           
+                   <li><a>Home</a></li>
+                   <li><a>About Us</a></li>
+                   <li><a>Shop</a></li>
+                   <li><a>All Fruits</a></li>
+               </ul>
+             </div>
+           </div>
+           </div>
+          </header>
+
       <!-- banner starts -->
-        <!-- carousel -->
+      <!-- main section starts -->
+       <main> 
+        <section class="container mx-auto px-5">
+         <!-- carousel -->
         <div class="carousel w-full mt-14 mb-10 lg:mb-56 relative">
+          <!-- sliders 1 -->
           <div id="slide1" class="carousel-item relative w-full">
             <div class="absolute bg-gradient-to-b from-black w-full h-full rounded-lg"></div>
             <div class="absolute w-full h-full flex flex-col gap-1 md:gap-6 justify-center items-center text-center text-white">
@@ -79,6 +85,7 @@
                 </div>
               </div>
               
+              <!-- sliders 2 -->
               <div id="slide2" class="carousel-item relative w-full">
                 <img src="images/banner2.png" class="w-full">
                 <div class="absolute bg-gradient-to-b from-black w-full h-full rounded-lg"></div>
@@ -93,6 +100,7 @@
               </div>
             </div> 
 
+            <!-- sliders 3 -->
             <div id="slide3" class="carousel-item relative w-full">
               <img src="images/banner3.png" class="w-full">
               <div class="absolute bg-gradient-to-b from-black w-full h-full rounded-lg"></div>
@@ -106,7 +114,8 @@
               <a href="#slide4" class="btn btn-circle">❯</a>
             </div>
           </div> 
-
+           
+          <!-- slider 4 -->
           <div id="slide4" class="carousel-item relative w-full">
             <img src="images/banner4.png" class="w-full">
             <div class="absolute bg-gradient-to-b from-black w-full h-full rounded-lg"></div>
@@ -121,11 +130,37 @@
           </div>
         </div> 
        </div>
-        
-    </header>
-
-    <!-- main section starts -->
-    <main>  
+       <!-- category section-->
+        <div class="absolute hidden lg:flex justify-evenly gap-34 w-2/3 h-60 bg-[#FFFFFF] rounded-md -bottom-[40%] left-[16.5%] shadow-xl">
+          <!-- fruit 1 -->
+        <div class="flex flex-col justify-center items-center gap-4">
+          <img src="images/fruit1.png" alt="">
+          <p class="text-[#121212]">Grapes</p>
+        </div>
+        <!-- fruit 2 -->
+        <div class="flex flex-col justify-center items-center gap-4">
+          <img src="images/fruit2.png" alt="">
+          <p class="text-[#121212]">Orange</p>
+        </div>
+        <!-- fruit 3 -->
+        <div class="flex flex-col justify-center items-center gap-4">
+          <img src="images/fruit3.png" alt="">
+          <p class="text-[#121212]">Mango</p>
+        </div>
+        <!-- fruit 4 -->
+        <div class="flex flex-col justify-center items-center gap-4">
+          <img src="images/fruit4.png" alt="">
+          <p class="text-[#121212]">Strawberry</p>
+        </div>
+        <!-- fruit 5 -->
+        <div class="flex flex-col justify-center items-center gap-4">
+          <img src="images/fruit5.png" alt="">
+          <p class="text-[#121212]">Pomegranate</p>
+        </div>
+       </div>
+      </div>
+    </section>
+    
      <!-- deal of the day starts -->
       <section class="container mx-auto px-5">
       
@@ -397,14 +432,13 @@
        </div>
       </div>
       </div>
-
     </section>
-    <!-- Choose Us section -->
 
+    <!-- Choose Us section -->
     <section class="class=container mx-auto px-5">
       <div class="flex flex-col gap-6 justify-center items-center text-center mb-16 md:mb-24 lg:mb-36">
         <h1 class="text-5xl font-bold">Why Choose <span style="color: #F85559;">Us?</span></h1>
-        <P class="text-[#121212]">People will choose our <span style="color: #F85559;"> Fruit Burst</span> for its irresistible explosion of juicy flavors which evoke<br> a delightful and refreshing experience with every sip.</P>
+        <P class="text-gray-500">People will choose our <span style="color: #F85559;"> Fruit Burst</span> for its irresistible explosion of juicy flavors which evoke<br> a delightful and refreshing experience with every sip.</P>
         <div class="grid grid-cols-1 lg:grid-cols-3 order-2 lg:order-1 gap-4">
           <div class="flex flex-col gap-12">
             <div class="flex flex-col lg:flex-row gap-6 items-center lg:items-start">
@@ -412,9 +446,9 @@
                 <img src="images/c1.png" alt="">
               </div>
               <div class="flex flex-col items-center lg:items-start text-center lg:text-left gap-2">
-                <h3 class="text-2xl font-bold">Dedicated Team</h3>
-                <hr class="w-24 border-[#121212]">
-                <p>Wholeheartedly devoted to creating the best natural fruit beverages for their customers' enjoyment.</p>
+                <h3 class="text-xl font-bold">Dedicated Team</h3>
+                <hr class="w-24 border-black">
+                <p>Wholeheartedly devoted to creating the best natural fruit beverages for their customers enjoyment.</p>
               </div>
             </div>
 
@@ -423,8 +457,8 @@
                 <img src="images/c2.png" alt="">
               </div>
               <div class="flex flex-col items-center lg:items-start text-center lg:text-left gap-2">
-                <h3 class="text-2xl font-bold">Fresh is Best</h3>
-                <hr class="w-24 border-[#121212]">
+                <h3 class="text-xl font-bold">Fresh is Best</h3>
+                <hr class="w-24 border-black">
                 <p>Juicy, ripe, and oh-so-fresh – in Fruit Burst, we believe that 'fresh is best' is the sweetest mantra for every fruity feast!</p>
               </div>
             </div>
@@ -434,8 +468,8 @@
                 <img src="images/c3.png" alt="">
               </div>
               <div class="flex flex-col items-center lg:items-start text-center lg:text-left gap-2">
-                <h3 class="text-2xl font-bold">Gift Certificates</h3>
-                <hr class="w-24 border-[#121212]">
+                <h3 class="text-xl font-bold">Gift Certificates</h3>
+                <hr class="w-24 border-black">
                 <p>Peel away a moment of joy with Fruit Burst gift certificates, and let the fruity goodness put a smile on your face!
                 </p>
               </div>
@@ -450,9 +484,9 @@
                 <img src="images/c4.png" alt="">
               </div>
               <div class="flex flex-col items-center lg:items-end text-center lg:text-end gap-2">
-                <h3 class="text-2xl font-bold">Integrated Supplier</h3>
-                <hr class="w-24 border-[#121212]">
-                <p>Serving smiles with every fruity bite, courtesy of our<br> sweet Integrated Suppliers in Fruit Burst!</p>
+                <h3 class="text-xl font-bold">Integrated Supplier</h3>
+                <hr class="w-24 border-black">
+                <p>Serving smiles with every fruity bite, courtesy of our sweet Integrated Suppliers in Fruit Burst!</p>
               </div>
             </div>
             <div class="flex flex-col lg:flex-row-reverse gap-6 items-center lg:items-start">
@@ -460,9 +494,9 @@
                 <img src="images/c5.png" alt="">
               </div>
               <div class="flex flex-col items-center lg:items-end text-center lg:text-end gap-2">
-                <h3 class="text-2xl font-bold">Sustainable Practice</h3>
-                <hr class="w-24 border-[#121212]">
-                <p>Sustainability is the sweetest ingredient that making<br> every bite guilt-free and eco-friendly!</p>
+                <h3 class="text-xl font-bold">Sustainable Practice</h3>
+                <hr class="w-24 border-black">
+                <p>Sustainability is the sweetest ingredient that making every bite guilt-free and eco-friendly!</p>
               </div>
             </div>
 
@@ -471,9 +505,9 @@
                 <img src="images/c6.png" alt="">
               </div>
               <div class="flex flex-col items-center lg:items-end text-center lg:text-end gap-2">
-                <h3 class="text-2xl font-bold">The Benefits Only</h3>
+                <h3 class="text-xl font-bold">The Benefits Only</h3>
                 <hr class="w-24 border-[#121212]">
-                <p>Sip, savor, smile - Fruit Burst's benefits make every<br> moment worthwhile &  that's the magic of ours.</p>
+                <p>Sip, savor, smile - Fruit Burst's benefits make every moment worthwhile &  that's the magic of ours.</p>
               </div>
             </div>
           </div>
@@ -483,8 +517,7 @@
     </section>
     </main>
     <!-- main ends -->
-
-    <!-- footer starts -->
+      <!-- footer starts -->
     
     <footer class="container mx-auto px-5">
       <div class="footer footer-center p-16 md:p-20 lg:p-32 bg-[#121212] rounded text-[#FFFFFF]">
@@ -518,6 +551,5 @@
       
     </footer>
 
-    
 </body>
 </html>
